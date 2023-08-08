@@ -60,7 +60,7 @@ promptUsuario()
 */
 
 // 4- Implemente um programa que compare duas strings e determine se elas são iguais, ignorando maiúsculas e minúsculas. 
-
+/*
 alert("Exercicio 4: Comparando duas strings")
 
 let strOne
@@ -83,11 +83,19 @@ function avaliaStr() {
     }
 }
 promptUsuario4()
-
-
+*/
 
 // 5- Crie uma função que concatene duas listas (arrays) e retorne a lista resultante.
 
+const lista1 = [1, 2, 3]
+const lista2 = [4, 5, 6]
+
+alert("Exercicio 5: Concatenando 2 arrays, o primeiro é: " + lista1 + ". E o segundo é: " + lista2)
+
+
+let lista3 = lista1.concat(lista2)
+
+alert("A lista resultante é: " + lista3)
 
 
 
