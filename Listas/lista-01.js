@@ -100,22 +100,41 @@ alert("A lista resultante é: " + lista3)
 // Funções Nativas:
 // 6- Escreva um programa que calcule a média dos valores em um array utilizando a função reduce() e length. 
 
-// Exemplo sintaxe reduce()
+// Exemplo de sintaxe do reduce()
 //array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
 
+/*
 alert("Exercício 6: Calculando a media de um array usando reduce()")
 const arr6 = [1, 2, 3, 4, 5, 6];
 
 const somaTodos = arr6.reduce((acumulador, valorAtual) => {
     return acumulador + valorAtual;
 }, 0);
+
 let media = somaTodos / arr6.length
 
 alert("A média do array é: " + media)
-
-
+*/
 
 // 7- Crie uma função que retorne a data e hora atuais no formato legível: "Dia/Mês/Ano Hora:Minuto:Segundo". 
+
+alert("Exercício 7: Retornando a data e hora atuais formatados")
+
+function formatarDataHora(data) {
+    const dia = String(data.getDate()).padStart(2, '0');
+    const mes = String(data.getMonth() + 1).padStart(2, '0');
+    const ano = data.getFullYear();
+    const horas = String(data.getHours()).padStart(2, '0');
+    const minutos = String(data.getMinutes()).padStart(2, '0');
+    const segundos = String(data.getSeconds()).padStart(2, '0');
+  
+    return `${dia}/${mes}/${ano} ${horas}:${minutos}:${segundos}`;
+  }
+  
+  const dataAtual = new Date();
+  const dataHoraFormatada = formatarDataHora(dataAtual);
+  
+  alert(dataHoraFormatada);
 
 // 8- Implemente um programa que encontre o maior valor em um array usando a função Math.max().
 
