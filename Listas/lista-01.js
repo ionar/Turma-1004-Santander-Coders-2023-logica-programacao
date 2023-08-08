@@ -61,7 +61,28 @@ promptUsuario()
 
 // 4- Implemente um programa que compare duas strings e determine se elas são iguais, ignorando maiúsculas e minúsculas. 
 
+alert("Exercicio 4: Comparando duas strings")
 
+let strOne
+let strTwo
+
+function promptUsuario4() {
+    strOne = prompt("Por favor digite uma palavra:")
+    strTwo = prompt("Por favor digite outra palavra:")
+    avaliaStr()
+}
+
+function avaliaStr() {
+    strOne = strOne.toLowerCase()
+    strTwo = strTwo.toLowerCase()
+    if (strOne == strTwo) {
+        alert("As duas palavras são iguais!")
+        return true
+    } else {
+        alert("As duas palavras NÃO são iguais!")
+    }
+}
+promptUsuario4()
 
 
 
