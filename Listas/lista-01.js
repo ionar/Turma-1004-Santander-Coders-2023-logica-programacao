@@ -100,8 +100,18 @@ alert("A lista resultante é: " + lista3)
 // Funções Nativas:
 // 6- Escreva um programa que calcule a média dos valores em um array utilizando a função reduce() e length. 
 
+// Exemplo sintaxe reduce()
+//array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
 
+alert("Exercício 6: Calculando a media de um array usando reduce()")
+const arr6 = [1, 2, 3, 4, 5, 6];
 
+const somaTodos = arr6.reduce((acumulador, valorAtual) => {
+    return acumulador + valorAtual;
+}, 0);
+let media = somaTodos / arr6.length
+
+alert("A média do array é: " + media)
 
 
 
@@ -113,6 +123,7 @@ alert("A lista resultante é: " + lista3)
 
 // 10- Crie um programa que verifique se um número dado pelo usuário é um número primo usando uma função.
 
+/*
 alert("Exercicio 10: Verificando se o número é primo")
 
 // Número à avaliar
@@ -141,6 +152,7 @@ function verificaPrimo() {
         alert(`${numEval} NÃO é um numero primo!`)
     }
 }
+*/
 
 // Coerção e Tipos de Dados:
 // 11- Declare uma variável com valor "5" (string) e outra variável com valor 2 (número). Multiplique as duas variáveis e explique o resultado. 
