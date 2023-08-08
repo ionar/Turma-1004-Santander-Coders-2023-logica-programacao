@@ -118,6 +118,7 @@ alert("A média do array é: " + media)
 
 // 7- Crie uma função que retorne a data e hora atuais no formato legível: "Dia/Mês/Ano Hora:Minuto:Segundo". 
 
+/*
 alert("Exercício 7: Retornando a data e hora atuais formatados")
 
 function formatarDataHora(data) {
@@ -135,8 +136,18 @@ function formatarDataHora(data) {
   const dataHoraFormatada = formatarDataHora(dataAtual);
   
   alert(dataHoraFormatada);
+*/
 
 // 8- Implemente um programa que encontre o maior valor em um array usando a função Math.max().
+
+alert("Exercício 8: maior valor do array")
+
+const arr8 = [20, 290, 33, 4, 1, 292]
+
+const maiorValor = Math.max(...arr8)
+
+alert(`O valor maior no array é: ${maiorValor}`)
+
 
 // 9- Escreva uma função que gere um número inteiro aleatório entre dois valores dados como argumentos. 
 
