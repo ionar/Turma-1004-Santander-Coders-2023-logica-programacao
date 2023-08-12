@@ -140,6 +140,7 @@ function formatarDataHora(data) {
 
 // 8- Implemente um programa que encontre o maior valor em um array usando a função Math.max().
 
+/*
 alert("Exercício 8: maior valor do array")
 
 const arr8 = [20, 290, 33, 4, 1, 292]
@@ -147,9 +148,40 @@ const arr8 = [20, 290, 33, 4, 1, 292]
 const maiorValor = Math.max(...arr8)
 
 alert(`O valor maior no array é: ${maiorValor}`)
-
+*/
 
 // 9- Escreva uma função que gere um número inteiro aleatório entre dois valores dados como argumentos. 
+
+alert("Exercício 9: inteiro aleatório entre 2 números")
+
+let numero1 = prompt("Digite o primeiro número:")
+let numero2 = prompt("Digite o segundo número:")
+
+function gerarArray(inicio, fim) {
+    if (fim < inicio) {
+      return []; // Retorna um array vazio se o final for menor que o início
+    }
+  
+    const array = [];
+    for (let i = inicio; i <= fim; i++) {
+      array.push(i);
+    }
+    return array;
+}
+  
+const arrayFinal = gerarArray(numero1, numero2);
+  
+  //console.log(resultArray);
+
+function sortearNumero() {
+    const numeroSorteado = Math.floor(Math.random() * arrayFinal.length);
+    return arrayFinal[numeroSorteado];
+}
+
+let numeroGerado = sortearNumero(arrayFinal);
+
+alert("O número gerado foi: " + numeroGerado);
+
 
 // 10- Crie um programa que verifique se um número dado pelo usuário é um número primo usando uma função.
 
